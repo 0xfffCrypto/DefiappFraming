@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  defi-bot:
+    build: .
+    container_name: defi-trade-bot
+    volumes:
+      - ./.env:/app/.env
+    environment:
+      - DISPLAY=:99
+      - PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
+    # 非无头模式，需要VNC支持
+    # 使用host网络以确保可以访问宿主机的X11服务器
+    network_mode: "host"
+    restart: unless-stopped 
