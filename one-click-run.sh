@@ -35,7 +35,7 @@ cd "$TEMP_DIR"
 
 # 下载最新版本
 echo "下载DeFi交易机器人..."
-curl -L -o defi-bot.zip "https://github.com/yourusername/defi-bot/releases/latest/download/defi_trade_bot_latest.zip"
+curl -L -o defi-bot.zip "https://github.com/0xfffCrypto/DefiappFraming/releases/download/1.0.0/defi_trade_bot_20250406.zip"
 
 # 解压文件
 echo "解压文件..."
